@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Something</title>
+    <script>
+        function drawOnCanvas(){
+            var c = document.getElementById("c");
+            var ctx = c.getContext("2d");
+            //set fill color to green
+            ctx.fillStyle=("lightgreen");
+            //draw filled rectangle
+            ctx.fillRect(50,50,200,150);
+            
+            // ctx.strokeRect(50,50,200,150); //can use strokeRect for only drawing border
+            
+            // Trace First Diagonal
+            ctx.moveTo(50,50);
+            ctx.lineTo(250,200);
+            // Trace Second Diagonal
+            ctx.moveTo(250,50);
+            ctx.lineTo(50,200);
+            // draw diagonals in red
+            ctx.strokeStyle="red";
+            ctx.stroke();
+
+        }
+    </script>
+</head>
+<body onload="drawOnCanvas();">
+    <!-- create an id to use it in the JS part -->
+    <canvas id="c" width="400" height="300" style="border:2px solid rgb(208, 53, 53)">
+        Your browser  does not support the canvas element... 
+    </canvas>
+
+</body>
+</html>
