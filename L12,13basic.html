@@ -1,0 +1,26 @@
+<!-- lab 12,13 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"
+src="jquery-1.9.1.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+       $("p").each(function(index){
+                 $(this).text("Your Id is:" +this.id+"and Index is:"+index);
+       });
+           $("p.highlighted").css("background","skyblue");
+        //  alert($("p").get(1).innerHTML);
+    });
+    </script>
+</head>
+<body text="maroon">
+    <p id="p1"></p>
+    <p id="p2" class="highlighted">hello this is niza</p>
+</body>
+</html>

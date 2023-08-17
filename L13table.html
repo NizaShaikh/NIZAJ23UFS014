@@ -1,0 +1,56 @@
+<!-- lab13 -->
+<html>
+<head>
+<title>jQuery Labs</title>
+
+    <link rel="stylesheet" href="jquery-1.9.1.js" />
+    <script src="jquery-1.9.1.js"></script>
+    <script src="jquery-1.9.1.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+    	//jQuery code here
+		$("tbody tr:even").css("background-color","pink");
+		$("tbody tr:odd").css("background-color", "magenta");
+
+		$("thead tr").css("background-color", "white");
+$("thead tr").css("color", "black"); 
+
+    	
+    });
+</script>
+
+</head>
+
+<body>
+<!-- Body HTML here -->
+<table border="1">
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>John Doe</td>
+		<td>19</td>
+	</tr>
+
+	<tr>
+		<td>Jane Doe</td>
+		<td>21</td>
+	</tr>
+	<tr>
+		<td>Mary Doe</td>
+		<td>22</td>
+	</tr>
+	<tr>
+		<td>Superman</td>
+		<td>222</td>
+	</tr>
+</tbody>
+</table>
+</body>
+
+</html>

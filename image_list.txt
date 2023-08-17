@@ -1,0 +1,9 @@
+[
+  {"src": "annie.jpg", "caption": "Annie the cat"},
+
+  {"src": "cave.jpg", "caption": "Sea cave"},
+
+  {"src": "desert.jpg", "caption": "Neat desert scene"},
+
+  {"src": "poppy.jpg", "caption": "California poppy field"}
+]
